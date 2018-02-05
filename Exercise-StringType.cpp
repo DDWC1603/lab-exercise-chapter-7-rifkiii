@@ -2,33 +2,31 @@
 //complete the program below. 
 
 #include <iostream>
+#include <string>
+#include <console.h>
+#include <simpio.h>
 
 int main()
 {
-
-	string myName="Mike";//write your name there.
-	//make a while loop until user input 'quit' to exit/end the program
-
-	(true)
-	{
-		
-		string userName;
-		//get the user input for string.
-		if(userName=="Abu")
-	       	{
-			cout<<"Hey Abu!"<<endl;
-		}
-		else if(userName=="quit")
-		{
+	string myName = "Rifki";
+	while (true){
+		cout<<"Enter your name (or 'quit' to exit):";
+		string userName = getline ();
+		if (userName == "Ali"){
+			cout<<"Hi, Ali! Welcome back!" <<endl;
+			else if (userName == "quit") {
 			cout<<endl;
 			break;
+			else if (userName != myName){
+				cout<<"Hello, "<<userName << endl;
+		}   else {
+			cout<<"Oh, it's you, "<<myName <<endl;
 		}
-		else
-		{
-			cout<<"Aha! its "<<myName<<endl;
+				
+			}
+			}
 		}
+		return 0;
 	}
-	return 0;
-}
 
 
